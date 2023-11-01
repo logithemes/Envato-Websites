@@ -1,0 +1,443 @@
+/*-------------------------------------------------*/
+/* 1. MOBILE VIEW RESPONSIVE
+/*-------------------------------------------------*/
+
+/*-------------------------------------------------------*/
+/* When the browser is 992 to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+  .testimonial .section-title {
+    padding-left: 0;
+  }
+  .menu ul li .act1 {
+    display: inline-block;
+  }
+  .nav-inner .side-bar-right {
+    display: flex !important;
+  }
+  .nav .footer-follow {
+    display: none;
+  }
+  .mission-img::before {
+    width: 92%;
+  }
+  .talent-network {
+    padding-top: 0;
+  }
+  .faq-main {
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
+  .cpy-right {
+    padding-top: 35px;
+  }
+  .courses-details {
+    text-align: center;
+    padding-top: 35px !important;
+    padding-bottom: 35px;
+  }
+  .courses-details .price {
+    padding-right: 0;
+  }
+  .framer-text {
+    left: 0;
+  }
+
+  .deep-dives-blox {
+    margin-top: 50px;
+  }
+  .padding-left-all {
+    padding: 0;
+  }
+  .nav-inner {
+    height: auto;
+    align-items: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cpy-right h3 {
+    text-align: center;
+  }
+
+  .banner .ban-lhs {
+    margin-top: 0;
+    margin-bottom: 59px;
+  }
+
+  .footer {
+    padding: 90px 0 70px 0;
+  }
+  .con-det::before {
+    border: 19px solid #cde0ef;
+  }
+  .contact-us::before {
+    width: 300px;
+    height: 400px;
+    opacity: 0.1;
+  }
+  .testimonial {
+    padding-bottom: 0;
+  }
+
+  .testimonial-img {
+    margin: 0;
+  }
+  .contact-us {
+    padding: 0 0 0 0;
+  }
+
+  .followers {
+    margin-bottom: 30px;
+  }
+
+  .menu a:hover {
+    color: #fff;
+  }
+
+  .side-bar.act {
+    width: 100%;
+  }
+
+  .nav .row {
+    align-items: center;
+  }
+
+  .nav {
+    background: #fff;
+    padding: 35px 0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    position: absolute;
+  }
+
+  .side-bar-right i {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .logo img {
+    max-width: 128px;
+  }
+
+  .nav-inner .menu {
+    position: fixed;
+    left: -500px;
+    top: 0;
+    overflow-y: auto;
+    height: 100vh;
+    width: 300px;
+    background: #16243d;
+    padding: 31px 20px 20px 20px;
+    z-index: 99;
+    transition: all 0.5s ease;
+  }
+
+  .menu ul li:first-child {
+    display: block;
+    border: 0;
+  }
+
+  .menu li {
+    width: 100%;
+    padding-bottom: 13px;
+  }
+
+  .menu a {
+    color: #fff !important;
+    width: 100%;
+    padding-bottom: 17px;
+    margin-left: 10px;
+  }
+
+  .menu img {
+    width: 120px;
+    filter: invert(1);
+    margin-bottom: 24px;
+  }
+
+  .menu ul li:last-child {
+    border: 0;
+  }
+
+  .nav-inner .side-bar-right {
+    position: absolute;
+    right: 15px;
+  }
+
+  .logo {
+    position: absolute;
+    transform: scale(0.8);
+  }
+
+  .menu-bar {
+    display: block;
+    position: absolute;
+    left: 15px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu span {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    background: red;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    cursor: pointer;
+  }
+
+  .menu.menuact {
+    left: 0;
+  }
+  /*-------------------------*/
+
+  .cpy-right-top .cpy {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .foo-deati {
+    margin-top: 10px;
+  }
+
+  .ban-inn {
+    display: block;
+    text-align: center;
+  }
+
+  .banner .ban-lhs .theme-btn {
+    justify-content: center;
+    margin-top: 30px;
+  }
+
+  .ban-lhs h1 {
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .ban-lhs p {
+    border-left: 0;
+    padding-right: 0;
+    padding-bottom: 25px;
+    padding-left: 0;
+  }
+
+  .banner {
+    padding-bottom: 70px;
+    padding-top: 170px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 768px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+  .theme-btn a {
+    padding: 23px 45px;
+  }
+
+  .section-title img {
+    margin-left: 30px;
+  }
+  .section-title h2 {
+    font-size: 35px !important;
+    line-height: 43px !important;
+  }
+  .contact-map {
+    padding: 0;
+  }
+
+  .banner .ban-lhs {
+    padding: 0 0 0 0;
+  }
+  .ban-lhs h1 {
+    font-size: 50px;
+    line-height: 52px;
+  }
+  .ban-lhs p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-top: 20px;
+  }
+
+  .ban-inn {
+    padding: 0 10px;
+  }
+
+  .ban-lhs h1::before {
+    display: none;
+  }
+
+  .footer::before,
+  .footer::after,
+  .testimonial::before,
+  .testimonial::after {
+    display: none;
+  }
+
+  .foo-deati a {
+    padding-left: 0;
+  }
+
+  .foo-deati {
+    margin-top: 30px;
+  }
+
+  .post-content {
+    padding: 25px;
+  }
+}
+
+/*-------------------------------------------------------*/
+/* When the browser is 576px to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+@media screen and (max-width: 576px) {
+  .get-submit {
+    text-align: center;
+  }
+  .framer li {
+    justify-content: flex-start;
+  }
+  .framer-text {
+    padding-left: 10px;
+  }
+  .deep-dives {
+    padding-top: 0;
+  }
+  .brand-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .brand-img img {
+    width: 100px;
+    margin-bottom: 10px;
+  }
+  .testimonial-img p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .clint-img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-form {
+    padding: 30px;
+  }
+  .team-mates-all {
+    padding-top: 40px;
+  }
+  .contact-form::before,
+  .contact-form::after {
+    display: none;
+  }
+  .network .group-2 {
+    display: none;
+  }
+  .deep-dives-blox {
+    padding: 30px;
+    margin-top: 0;
+  }
+
+  .video-four ul {
+    flex-direction: column;
+  }
+  .oru-mission {
+    padding: 0;
+  }
+  .video-four {
+    margin-top: 0;
+  }
+
+  .banner {
+    padding-top: 120px;
+  }
+
+  .contact-following {
+    display: none;
+  }
+
+  .ban-lhs h1::before {
+    display: none;
+  }
+
+  .testimonial:before {
+    display: none;
+  }
+
+  .section-title {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial {
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .footer {
+    padding-top: 0;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .get-submit {
+    text-align: center;
+  }
+  .get-submit input {
+    width: 52%;
+  }
+  .get-submit button {
+    width: 49%;
+  }
+  .team-mates-all {
+    padding: 20px 0 0 0;
+  }
+  .our-courses-box {
+    padding: 30px;
+  }
+  .price {
+    padding-right: 0;
+    padding-top: 25px;
+  }
+
+  .banner .ban-lhs::before,
+  .banner .ban-lhs::after {
+    display: none;
+  }
+
+  .ban-lhs h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .banner .ban-lhs .theme-btn {
+    flex-direction: column;
+    margin-top: 0;
+  }
+
+  .theme-btn .bg-none {
+    margin-top: 25px;
+  }
+}
