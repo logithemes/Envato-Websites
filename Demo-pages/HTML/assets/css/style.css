@@ -250,7 +250,14 @@ p {
 .nav-inner .side-bar-right a:hover{color: #fff;}
 
 .menu-bar {
-  display: none;
+  
+background: #a9ff5c;
+  
+padding: 3px 10px;
+  
+border-radius: 4px;
+  
+display: none;
 }
 
 .comm-btn a {
@@ -312,7 +319,7 @@ p {
     position: relative;
     overflow: hidden;
 }
-.landing-heading{}
+
 .landing-heading span{position: relative;font-weight: 600;}
 .landing-heading span::before, .home-demo-heading span::before{position: absolute;content: "";background: url(../images/shapes/line.svg);width: 100%;height: 15px;background-size: cover;bottom: 0;}
 .landing-heading h1{
@@ -339,8 +346,7 @@ p {
 .landing-banner-img{
     margin-top: -126px;
 }
-.landing-banner-img img{}
-.banner-shapes{}
+
 .banner-shapes .shapes{position: absolute;animation: 5s linear infinite jumpThree;top: 0;display: inline-block;max-width: 100px;}
 
 @keyframes jumpThree{
@@ -398,6 +404,7 @@ p {
 }
 .demo-full{
     padding: 0 15px;
+    transition: all 0.4s ease;
 }
 .demo-full a{
     display: flex;
@@ -417,8 +424,6 @@ p {
     font-size: 14px;
 }
 
-.home-demo-heading{}
-.demo-sub{}
 .home-demo-heading{
     padding-right: 20px;
 }
@@ -465,7 +470,6 @@ p {
 .load-speed .home-demo-heading h2{
     font-size: 44px;
     line-height: 54px;
-    /* margin-top: 5px; */
     margin-bottom: 20px;
 }
 .load-speed .comm-btn a{
@@ -513,7 +517,7 @@ p {
 /*-------------------------------------------------*/
 /* core Features
 /*-------------------------------------------------*/
-.core-features{}
+
 .core-features-inner{
     padding: 20px;
     margin-bottom: 30px;
@@ -521,7 +525,7 @@ p {
     border-radius: 20px;
     height: 220px;
 }
-.core-features-inner img{}
+
 .core-features-inner h4{
     font-size: 19px;
     font-weight: 400 !important;
@@ -531,12 +535,12 @@ p {
 .core-features{
     display: inline-block;
     width: 100%;
-    padding-bottom: 120px;
+    padding-bottom: 80px;
     overflow: hidden;
     padding-top: 60px;
 }
 
-.core-features .home-demo-heading h2{}
+
 .core-features .shapes2{
     filter: none;
     max-width: 100px;
@@ -548,22 +552,16 @@ p {
 .ln-footer{
     float: left;
     width: 100%;
-    padding-bottom: 120px;
-}
-.ln-footer .home-demo-heading{
+    padding-bottom: 100px;
     background: linear-gradient(180deg,#f2f5fd 0%,#e3eafc 100%);
-    border-radius: 30px;
-    padding: 80px;
+    padding-top: 100px;
 }
-.ln-footer .home-demo-heading img{}
-.ln-footer .home-demo-heading p{}
+
 .ln-footer .home-demo-heading h2{
     margin-bottom: 30px;
     margin-top: 30px;
     line-height: 60px;
 }
-.ln-footer .home-demo-heading .comm-btn{}
+
 .ln-footer .home-demo-heading .comm-btn a{background-color: #a9ff5c;}
 .ln-footer .home-demo-heading .comm-btn span::before{background: none;}
-.{}
-.{}
