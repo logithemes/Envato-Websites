@@ -9,29 +9,6 @@ $(document).ready(function () {
         $(".menu").removeClass("menuact");
     })
 
-    //MOUSE MOVE FUNCTION
-     //mouse move rotate
-     $("#mousemove").mousemove(function(e) {
-        $("#mousemove").css('transform', 'rotateX(0deg) rotateY(0deg) perspective(0px)');
-        
-        var rotate_X;
-        var rotate_Y;
-        var perspective_z;
-        var invert = false;
-        
-        if (invert) {
-          rotate_X =  e.pageX / 80;
-          rotate_Y = e.pageY / 80;
-          perspective_z = e.pageX / 80;
-        } else if (!invert) {
-          rotate_X = e.pageX / 80;
-          rotate_Y = -e.pageY / 80;
-          perspective_z = e.pageX / 80;
-
-        }
-        
-        $("#mousemove").css('transform', 'rotateX(' + rotate_X + 'deg) rotateY(' + rotate_Y + 'deg) perspective(' + perspective_z + 'px)')
-      });
     
     //BANNER ANIMATION
     $(".banner").addClass("ani-banner");
@@ -47,10 +24,52 @@ $(document).ready(function () {
     })
 
 
+    //mouse move image
+    $(".container-box").on(" mousemove",function(e){ 
+      var x = e.clientX;
+      var y = e.clientY;
+      var newposX = x - 150;
+      var newposY = y - 150; $(".mousemove").css("transform","translate3d("+newposX+"px,"+newposY+"px,0px)");
+      $(".mousemove").css("opacity", "1");
+      });
+
+      	//mouse leave image
+	$(".container-box").mouseleave(function() {
+			$(".mousemove").css("opacity", "0");
+		});
+
+    //mouse move rotate
+    $(".case-study-inner img").mousemove(function(e) {
+      $('.case-study-inner img').css('transform', 'rotateX(0deg) rotateY(0deg) perspective(0px)');
+      
+      var rotate_X;
+      var rotate_Y;
+      var perspective_z;
+      var invert = false;
+      
+      if (invert) {
+        rotate_X =  e.pageX / 120;
+        rotate_Y = e.pageY / 120;
+        perspective_z = e.pageX / 120;
+      } else if (!invert) {
+        rotate_X = e.pageX / 120;
+        rotate_Y = -e.pageY / 120;
+        perspective_z = e.pageX / 120;
+
+      }
+      
+      $('.case-study-inner img').css('transform', 'rotateX(' + rotate_X + 'deg) rotateY(' + rotate_Y + 'deg) perspective(' + perspective_z + 'px)')
+    });
+
+    $(".case-study-inner img").mouseleave(function(){
+      $(".case-study-inner img").css("transform", "none")
+    })
+  
 
 //ON WINDOW SCROOL FUNCTION
-
 $(window).on("scroll", function(){
+
+  //nav fixed
     var _topval = $(window).scrollTop();
     if(_topval >= 150){
         $(".nav").addClass("act");
@@ -58,6 +77,12 @@ $(window).on("scroll", function(){
     else{
         $(".nav").removeClass("act");
     }
+
+    //banner img translate
+      var _translatex = "-" + _topval / 4 + "px";
+      var _translatey =  _topval / 4 + "px";
+      $(".shapes3").css({'transform' : 'translate(' + _translatex +', ' + _translatex + ')'});
+      $(".shapes4").css({'transform' : 'translate(' + _translatey +', ' + _translatey + ')'});
 
 });
 

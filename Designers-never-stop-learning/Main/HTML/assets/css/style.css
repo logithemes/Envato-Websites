@@ -290,19 +290,13 @@ p {
 }
 
 .banner .ban-lhs {
-  opacity: 0;
-  clip-path: circle(27% at -23%);
+display: block;
 }
 .ban-lhs span {
   display: inline-block;
   color: #00bcd4;
   font-weight: 700;
-}
-.banner .ban-lhs.ani1 {
-  transition: all 0.5s ease;
-  opacity: 1;
-  transition-delay: 0.5s;
-  clip-path: circle(150% at 0);
+  text-decoration: underline;
 }
 
 .ban-lhs h1 {
@@ -319,6 +313,7 @@ p {
   line-height: 80px;
   padding-right: 94px;
 }
+.ban-lhs img{}
 .ban-lhs h1::before {
   background-color: #efece6;
   content: "";
@@ -391,26 +386,23 @@ p {
 .oru-mission {
   padding: 80px 0 0 0;
 }
-.mission-img {
-  position: relative;
-  width: 100%;
-}
+
 .mission-img::before {
   position: absolute;
   content: "";
   border-radius: 50px; /*1*/
-  border: 2px solid transparent; /*2*/
+  border: 2px solid transparent; 
   background: linear-gradient(45deg, #307421, #00bcd4) border-box; /*3*/
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; /*5'*/
-  mask-composite: exclude; /*5*/
+  -webkit-mask-composite: xor; 
+  mask-composite: exclude; 
   width: 100%;
   height: 100%;
 }
 
 
-
+.mission-img::after{}
 .oru-mission .section-title {
   color: #999;
   font-weight: 700;
@@ -824,6 +816,19 @@ p {
   padding: 25px 0 0 0;
   margin-bottom: 0;
   line-height: 52px;
+  animation: deco 10s infinite  linear;
+  animation-duration: 8s;
+}
+@keyframes deco{
+  0% {
+    font-variation-settings: "wght" 100;
+}
+50% {
+    font-variation-settings: "wght" 900;
+}
+100% {
+    font-variation-settings: "wght" 100;
+}
 }
 
 .inn img {
@@ -885,6 +890,7 @@ p {
   position: relative;
   font-weight: 600;
   /* color: #000; */
+  text-decoration: none;
 }
 
 .section-title {
@@ -1327,8 +1333,7 @@ p {
   border-radius: 10px;
   padding: 50px;
 }
-.contact-form::before,
-.contact-form::after {
+.contact-form::before, .contact-form::after, .mission-img::after {
   position: absolute;
   content: "";
   background: url(../images/icons/1.svg);

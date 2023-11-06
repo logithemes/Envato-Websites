@@ -5,7 +5,7 @@
 This file contains the styling for the actual template, this
 is the file you need to edit to change the look of the
 template.
----------------------------------------------------- */
+-------------------------------a--------------------- */
 /*=====================================================================
 @Template Name: Docy
 @Version: 1.1.2
@@ -23,7 +23,6 @@ Table of Content:
 08/ Footer
 
 =====================================================================*/
-
 
 
 
@@ -181,8 +180,6 @@ p {
 
 .nav-inner .side-bar-right a {
   padding: 15px 40px;
-  background: no-repeat;
-  border: 1px solid #571cff;
 }
 .nav-inner .side-bar-right a:hover{
     border: 0;
@@ -248,10 +245,8 @@ p {
 }
 .nav.act .nav-inner .side-bar-right span {
   transition: all 0.5s ease;
-  color: #000;
   text-transform: capitalize;
   font-weight: 500;
-  letter-spacing: ;
 }
 .menu1 a {
   color: #000;
@@ -293,7 +288,7 @@ p {
 
 .banner {
   width: 100%;
-  padding: 190px 0 50px 0;
+  padding: 165px 0 0 0;
   float: left;
   position: relative;
   overflow: hidden !important;
@@ -560,12 +555,19 @@ p {
   overflow: hidden;
 }
 .case-study button {
-  display: none !important;
+ 
+}
+.case-study .slick-prev, .case-study .slick-next{position: absolute;left: 0;z-index: 2;top: 60%;font-size: 0;background: #4b456d;width: 50px;height: 50px;border-radius: 50%;border: 1px solid #fff;}
+.case-study .slick-prev::before, .case-study .slick-prev::after{position: absolute;    content: "\f178";}
+.case-study .slick-prev::after{    content: "\f177";}
+.case-study .slick-next{
+    left: auto;
+    right: 0;
 }
 .case-study li {
   position: relative;
   display: inline-block;
-  padding: 0 52px;
+  padding: 0 118px 0 200px;
 }
 .case-study-inner {
   width: 100%;
@@ -573,20 +575,20 @@ p {
   display: flex;
   align-items: center;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .case-study-inner img {
   border-radius: 20px;
-  height: 400px;
+  height: auto;
   width: 100%;
   object-fit: cover;
-  margin-left: 180px;
-  filter: brightness(0.6);
+  margin-left: 0;
+  filter: brightness(0.6);transition: all 0.3s ease
 }
+.case-study-inner img:hover{transition: all 0.3s ease;filter: none;}
 .case-study-box {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
   position: absolute;
@@ -596,6 +598,8 @@ p {
   background: rgba(22, 22, 22, 0.5);
   z-index: 1;
   text-align: left;
+  transition: all 0.4s ease;
+  left: -128px;
 }
 
 .case-study-box .theme-btn {
@@ -604,6 +608,8 @@ p {
 .case-study-box .theme-btn a {
   padding: 17px 30px;
 }
+.case-study-box:hover{transition: all 0.4s ease;    background: rgb(53 49 82);
+  border: 1px solid rgba(255, 255, 255, 0.15);}
 
 /*-------------------------------------------------*/
 /* pricing
@@ -746,10 +752,26 @@ p {
   padding-top: 16px;
 }
 .selected-work-text h2 {
-  font-size: 35px;
+  font-size: 40px;
+  font-weight: 400 !important;
+  line-height: 49px;
+}
+.sc-title-sub{
+    margin-bottom: 20px;
+}
+.sc-title-sub i{
+    color: #999;
+    font-size: 15px;
+}
+.sc-title-sub .sc-title{
+    text-decoration: underline;
+    color: #ff733b;
+    font-size: 14px;
+    padding-left: 7px;
 }
 .selected-work-text p {
-  padding: 15px 0 20px 0;
+  padding: 22px 0 22px 0;
+  color: #fff;
 }
 .authors {
   border-top: 1px solid #463657;
@@ -769,7 +791,7 @@ p {
 }
 .author-name h3 {
   font-size: 18px;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 .author-name span {
   font-size: 13px;
@@ -855,7 +877,59 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 1rem;
   padding: 30px;
-  margin: 17px 0 16px 0;transition: all 0.5s ease;
+  margin: 17px 0 16px 0;
+  transition: all 0.5s ease;
+  position: relative;
+}
+.container-box .shapes5{
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    background: #ecc36b;
+    animation: to-left 60s infinite linear;
+    border-radius: 50%;
+}
+@keyframes to-left{
+
+  0% {
+    left: 0%;
+    transform: rotate(0deg);
+}
+50% {
+    left: 100%;    transform: rotate(180deg);
+}
+100% {
+    left: 0%;    transform: rotate(360deg);
+}
+}
+
+.container-box .shapes6{animation: to-right 60s infinite linear;left: auto;right: 0;top: auto;bottom: -20px;}
+@keyframes to-right{
+
+  0% {
+    right: 0%;
+    transform: rotate(0deg);
+}
+50% {
+    right: 100%;    transform: rotate(180deg);
+}
+100% {
+  right: 0%;    transform: rotate(360deg);
+}
+}
+
+
+.mousemove{
+    position: absolute;
+    top: 24px;
+    left: -38px;
+    transition: all 0.1s ease;
+    opacity: 0;
+    width: 100px;
+    mix-blend-mode: difference;
 }
 .container-box:hover{transition: all 0.5s ease;background: rgb(53 49 82);border: 1px solid rgba(255, 255, 255, 0.15);}
 
@@ -896,7 +970,7 @@ p {
 .webflow-content {
   padding: 0 0 0 60px;
   backdrop-filter: blur(0);
-  background: #0f0818 !important;
+  background: none;
   text-align: left;
   border: 0 !important;
 }
@@ -926,7 +1000,7 @@ p {
   border: 10px solid #fff;
   transform: scale(0.9);
 }
-
+.webflow-content:hover{background: none;}
 
 /*-------------------------------------------------*/
 /* SIDE BAR
@@ -1645,11 +1719,21 @@ p {
 /*-------------------------------------------------*/
 /*  shapes
 /*-------------------------------------------------*/
-
+.shapes{position: absolute;top: 0;left: 0;right: 0;z-index: -1;overflow: hidden;width: 100%;height: 100%;}
 .shapes img {
   position: fixed;
   width: 120px;
   height: 120px;
+}
+.shapes .shapes3{
+    position: absolute;
+    left: 100px;
+    top: 150px;
+}
+.shapes .shapes4{
+    position: absolute;
+    right: 100px;
+    bottom: 30px;
 }
 .shapes .shapes1 {
   animation: animationFramesSeven 11s infinite linear alternate;
