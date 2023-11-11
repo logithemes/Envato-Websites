@@ -154,6 +154,8 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  display: -ms-flexbox;
+  -ms-flex-direction: column!important;
 }
 
 .logo img {
@@ -229,7 +231,7 @@ p {
 
 .nav-inner .side-bar-right {
   display: flex;
-  
+  display: -ms-flexbox;
   padding-left: 23px;
 }
 .menu1 a {
@@ -313,7 +315,7 @@ display: block;
   line-height: 80px;
   padding-right: 94px;
 }
-.ban-lhs img{}
+
 .ban-lhs h1::before {
   background-color: #efece6;
   content: "";
@@ -349,6 +351,9 @@ display: block;
   padding: 0;
   justify-content: space-between;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .video-four li {
   padding: 0 10px;
@@ -393,6 +398,9 @@ display: block;
   border-radius: 50px; /*1*/
   border: 2px solid transparent; 
   background: linear-gradient(45deg, #307421, #00bcd4) border-box; /*3*/
+  background: -o-linear-gradient(45deg, #307421, #00bcd4);
+  background: -ms-linear-gradient(45deg, #307421, #00bcd4);
+  background: -webkitlinear-gradient(45deg, #ffef2d, #00bcd4);
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor; 
@@ -402,7 +410,7 @@ display: block;
 }
 
 
-.mission-img::after{}
+
 .oru-mission .section-title {
   color: #999;
   font-weight: 700;
@@ -438,6 +446,9 @@ display: block;
   border-radius: 10px;
   border: 2px solid transparent;
   background: linear-gradient(45deg, #192516, #08424a) border-box;
+  background: -o-linear-gradient(45deg, #192516, #08424a);
+  background: -ms-linear-gradient(45deg, #192516, #08424a);
+  background: -webkitlinear-gradient(45deg, #192516, #08424a);
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -458,6 +469,9 @@ display: block;
 .our-courses-box:hover {
   transition: all 0.5s ease;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  background: -o-linear-gradient(to left, #743ad5, #d53a9d);
+  background: -ms-linear-gradient(to left, #743ad5, #d53a9d);
+  background: -webkitlinear-gradient(to left, #743ad5, #d53a9d);
 }
 .our-courses-box:hover .group-img .group-1 {
   opacity: 1;
@@ -473,6 +487,9 @@ display: block;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .our-courses-box .framer-text1 {
   color: #fffbd8;
@@ -506,6 +523,9 @@ display: block;
   background: #232c2d;
   color: #919596;
   border-radius: 50px;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .course-heading {
   display: block;
@@ -623,6 +643,8 @@ display: block;
 
 .clint-img {
   display: flex;
+  display: -ms-flexbox;
+  
 }
 
 .clint-img h4 {
@@ -696,6 +718,9 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   border-radius: 50%;
   margin: 0 6px;
   cursor: pointer;
@@ -715,6 +740,8 @@ display: block;
 }
 .side-bar .footer-follow ul {
   display: flex;
+  display: -ms-flexbox;
+  
 }
 
 .side-bar .footer-follow li i {
@@ -804,6 +831,9 @@ display: block;
   margin-bottom: 40px;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .section-title p {
   font-size: 19px;
@@ -817,6 +847,7 @@ display: block;
   margin-bottom: 0;
   line-height: 52px;
   animation: deco 10s infinite  linear;
+  -webkit-animation: deco 10s linear infinite;
   animation-duration: 8s;
 }
 @keyframes deco{
@@ -923,6 +954,9 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .team-mates::before {
   position: absolute;
@@ -1061,6 +1095,9 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   margin: 0 0 15px 0;
 }
 .framer .framer-img img {
@@ -1177,6 +1214,7 @@ display: block;
   left: 84%;
   bottom: -99px;
   animation: move 10s infinite linear;
+  -webkit-animation: move 10s linear infinite;
 }
 
 .faq-rhs:after {
@@ -1188,6 +1226,7 @@ display: block;
   z-index: 0;
   left: 28em;
   animation: full 5.8s infinite linear;
+  -webkit-animation: full 5.8s linear infinite;
 }
 
 .faq-rhs ul {
@@ -1280,8 +1319,12 @@ display: block;
   width: 150px;
   height: 150px;
   background: linear-gradient(133deg, #128593, transparent);
+  background: -o-linear-gradient(133deg, #128593, transparent);
+  background: -ms-linear-gradient(133deg, #128593, transparent);
+  background: -webkitlinear-gradient(133deg, #128593, transparent);
   border-radius: 50%;
   animation: animationFramesThree 11s infinite linear alternate;
+  -webkit-animation: animationFramesThree 11s linear infinite;
   z-index: 1;
 }
 .contact-us::after {
@@ -1291,6 +1334,9 @@ display: block;
   right: 0;
   animation: none;
   background: linear-gradient(7deg, #1b1d86, transparent);
+  background: -o-linear-gradient(7deg, #1b1d86, transparent);
+  background: -ms-linear-gradient(7deg, #1b1d86,  transparent);
+  background: -webkitlinear-gradient(45deg, #1b1d86, transparent);
 }
 @keyframes animationFramesThree {
   0% {
@@ -1565,11 +1611,16 @@ display: block;
   padding: 0px 0 15px 0;
   display: flex;
   width: 100%;
+  display: -ms-flexbox;
+ 
 }
 .footer-follow {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   padding-left: 12px;
   position: relative;
   top: 4px;
@@ -1592,6 +1643,9 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .footer-follow i:hover {
@@ -1688,6 +1742,9 @@ display: block;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
  
 }
 .video-img img {
@@ -1707,12 +1764,19 @@ display: block;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .courses-details::before {
   position: absolute;
   content: "";
   background: linear-gradient(133deg, #128593, transparent);
+  background: -o-linear-gradient(133deg, #128593,  transparent);
+  background: -ms-linear-gradient(133deg, #128593, transparent);
+  background: -webkitlinear-gradient(133deg, #128593,  transparent);
   animation: animationFramesThree 11s infinite linear alternate;
+  -webkit-animation: animationFramesThree 11s linear infinite;
   width: 550px;
   height: 550px;
   bottom: -100px;

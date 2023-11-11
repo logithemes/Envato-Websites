@@ -155,10 +155,14 @@ p {
 .nav.act a:hover:before {
   background: #3c3ddc;
 }
+
 .nav-inner {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   width: 100%;
 }
 
@@ -175,6 +179,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   margin: 0px;
 }
 
@@ -233,6 +240,9 @@ p {
   justify-content: space-between;
   width: 33.333%;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .nav-inner .side-bar-right .theme-btn {
   margin-top: 0;
@@ -300,17 +310,9 @@ p {
   height: 100%;
 }
 
-.banner .ban-lhs {
-  
-transform: translateX(-30px);
-  
-opacity: 0;
-  
-/* margin-top: -80px; */
-}
 
-.banner .ban-lhs.ani1 {
-  transform: translateX(0);
+
+.banner .ban-lhs {
   transition: all 0.5s ease;
   opacity: 1;
   transition-delay: 0.5s;
@@ -327,7 +329,7 @@ opacity: 0;
   font-size: 100px;
   color: transparent;
   letter-spacing: 2px;
-  display: inline-block;
+  display: inline-block;transition: all 0.3s ease;
 }
 .ban-lhs h1::before {
   background-color: #efece6;
@@ -365,13 +367,15 @@ opacity: 0;
   width: 100%;
   display: flex;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .video-banner {
-  transform: scale(0.9) translateX(-20px);opacity: 0;
+  transform: scale(0.9) translateX(-20px);opacity: 0;transition: all 0.3s ease;
 }
 
-.video-banner.ani2{transform: scale(0.9) translateX(0);opacity: 1;transition: all 0.5s ease;transition-delay: 0.7s;}
 
 /*-------------------------------------------------*/
 /*  why choose 
@@ -392,8 +396,12 @@ opacity: 0;
   width: 200px;
   height: 200px;
   background: linear-gradient(133deg, #36501e, transparent);
+  background: -o-linear-gradient(133deg, #00000094, #060608a6);
+  background: -ms-linear-gradient(133deg, #00000094, #060608a6);
+  background: -webkitlinear-gradient(133deg, #ffef2d, #ff4f4f 80%);
   border-radius: 50%;
   animation: animationFramesThree 11s infinite linear alternate;
+  -webkit-animation: animationFramesThree 11s linear infinite;
   z-index: -1;
 }
 @keyframes animationFramesThree {
@@ -426,6 +434,8 @@ opacity: 0;
   font-weight: 700;
   line-height: 100px;
   letter-spacing: -2px;
+  z-index: 2;
+  position: relative;
 }
 .why-choose-inner p {
   font-size: 24px;
@@ -446,10 +456,12 @@ opacity: 0;
   position: absolute;
   width: 100px;
   height: 100px;
-  z-index: -1;
+  z-index: 3;
   transition: all 0.5s ease;
+  border: 4px solid #000;
+  border-radius: 50px;
 }
-.avatars img:hover{transition: all 0.5s ease;border: 4px solid #a9ff5c;}
+.avatars img:hover{transition: all 0.5s ease;border-radius: 50%;border: 4px solid #a9ff5c;transform: scale(0.8);}
 
 .avatars .avatars1 {
   top: 144px;
@@ -458,13 +470,14 @@ opacity: 0;
 .avatars .avatars2 {
   bottom: -40px;
   right: 267px;
+  z-index: 5;
 }
 .avatars .avatars3 {
   margin: -76px 0 0 -40px;
 }
 .avatars .avatars4 {
-  right: 150px;
-  z-index: 3;
+  right: 85px;
+  z-index: 10;
 }
 
 
@@ -486,6 +499,9 @@ opacity: 0;
   overflow: hidden;
   white-space: nowrap;
   display: flex;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .client-logo-left {
@@ -503,7 +519,9 @@ opacity: 0;
   margin: 0px 5px;
   border: 0;
 }
-.client-logo li img{filter: invert(1);}
+.client-logo li img{
+    filter: invert(1);
+}
 
 @keyframes logomoveleft {
   0% {
@@ -526,6 +544,7 @@ opacity: 0;
   height: 379px;
   object-fit: cover;
   border: 0;
+  filter: none;
 }
 .client-logo-wrap1 .client-logo li {
   width: 366px;
@@ -543,6 +562,9 @@ opacity: 0;
   height: 0;
   transition: all 0.5s ease;
   background: linear-gradient(1deg, #fc0c0c99, transparent);
+  background: -o-linear-gradient(1deg, #00000094, transparent);
+  background: -ms-linear-gradient(1deg, #00000094, transparent);
+  background: -webkitlinear-gradient(1deg, #ffef2d, transparent);
   }
   .client-logo-wrap1 ul li:hover::before{
     transition: all 0.5s ease;
@@ -578,6 +600,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   border-radius: 50%;
   margin: 0 6px;
   cursor: pointer;
@@ -899,7 +924,13 @@ opacity: 0;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;  -ms-flex-direction: column!important;
   border-image-source: linear-gradient(to left, #743ad5ba, #d53a9da1);
+  background: -o-linear-gradient(to left, #743ad5ba, #d53a9da1);
+  background: -ms-linear-gradient(to left, #743ad5ba, #d53a9da1);
+  background: -webkitlinear-gradient(to left, #743ad5ba, #d53a9da1);
   padding: 20px 20px 0 20px;
   
 }
@@ -909,6 +940,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   transition: all 0.5s ease;
   width: 100%;
   position: relative;
@@ -922,15 +956,15 @@ opacity: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 0;
+  height: 100%;
   transition: all 0.5s ease;
-  background: linear-gradient(1deg, #fc0c0c99, transparent);
+  background: linear-gradient(1deg, #e94e4e99, transparent);
+  background: -o-linear-gradient(1deg, #fc0c0c99, transparent);
+  background: -ms-linear-gradient(1deg, #fc0c0c99, transparent);
+  background: -webkitlinear-gradient(1deg, #fc0c0c99, transparent);
   z-index: 1;
 }
-.team-img:hover::before {
-  transition: all 0.5s ease;
-  height: 100%;
-}
+
 
 .team-img img {
   width: 100%;
@@ -950,6 +984,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   text-decoration: none;
   font-size: 20px;
   transition: all 0.5s ease;
@@ -1028,6 +1065,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   font-size: 14px;
 }
 
@@ -1222,6 +1262,8 @@ opacity: 0;
 }
 .case-studies-main ul {
   display: flex;
+  display: -ms-flexbox;
+ 
 }
 .case-studies-main li {
   padding: 0 15px;
@@ -1350,6 +1392,7 @@ opacity: 0;
 .text-loop {
   white-space: nowrap;
   animation: marquee 8s linear infinite;
+  -webkit-animation: marquee 8s linear infinite;
   padding-bottom: 10px;
 }
 @keyframes marquee {
@@ -1399,10 +1442,14 @@ opacity: 0;
   top: -21px;
   right: -39px;
   animation: animationFramesSeven 11s infinite linear alternate;
+  -webkit-animation: animationFramesSeven 11s linear infinite;
   width: 50px;
   height: 50px;
   z-index: 1;
   background: linear-gradient(133deg, #9cf947, transparent);
+  background: -o-linear-gradient(133deg, #9cf947, transparent);
+  background: -ms-linear-gradient(133deg, #9cf947, transparent);
+  background: -webkitlinear-gradient(133deg, #9cf947,  transparent);
   border-radius: 50%;
 }
 
@@ -1454,6 +1501,8 @@ opacity: 0;
 
 .comments ul {
   display: flex;
+  display: -ms-flexbox;
+ 
   padding: 0;
   margin: 0;
 }
@@ -1489,6 +1538,9 @@ opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   margin-bottom: 20px;
   float: left;
 }
@@ -1536,6 +1588,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   height: 100%;
 }
 
@@ -1623,6 +1678,8 @@ opacity: 0;
 
 .clint-img {
   display: flex;
+  display: -ms-flexbox;
+ 
 }
 .clint-img img {
   width: 50px;
@@ -1804,6 +1861,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   transition: all 0.5s ease;
 }
 
@@ -1996,6 +2056,8 @@ opacity: 0;
 .blog-left-img {
   display: flex;
   margin-top: 10px;
+  display: -ms-flexbox;
+
 }
 .blog-left-img img {
   display: inline-block;
@@ -2143,6 +2205,9 @@ opacity: 0;
   border-bottom: 1px solid #eee9e9;
   display: flex;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+ 
 }
 
 .au-img {
@@ -2206,6 +2271,9 @@ opacity: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+ 
 }
 
 .blg-search input {
@@ -2283,6 +2351,9 @@ opacity: 0;
   transition: all 0.5s ease;
   display: flex;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .popu-news li:hover .blg-post-content h3 {
@@ -2442,6 +2513,9 @@ opacity: 0;
   padding: 30px 0 40px 0;
   border-bottom: 1px solid #eee;
   justify-content: space-between;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .tag-lhs {
@@ -2477,6 +2551,9 @@ opacity: 0;
   display: flex;
   align-items: flex-end;
   justify-content: end;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .tag-share a {
@@ -2738,6 +2815,8 @@ opacity: 0;
   padding-left: 12px;
   position: relative;
   top: 4px;
+  display: -ms-flexbox;
+  
 }
 
 .footer-follow li {
@@ -2757,6 +2836,9 @@ opacity: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .footer-follow i:hover {
@@ -2795,6 +2877,7 @@ opacity: 0;
   z-index: 99999;
   top: -275px;
   animation: star_down_one 6s infinite linear;
+  -webkit-animation: star_down_one 6s linear infinite;
   opacity: 0;
 }
 

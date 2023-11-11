@@ -152,6 +152,9 @@ p {
   align-items: center;
   justify-content: center;
   width: 100%;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .logo img {
@@ -167,6 +170,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   margin: 0px;
 }
 
@@ -224,6 +230,9 @@ p {
   justify-content: space-between;
   width: 33.333%;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .nav-inner .side-bar-right .comm-btn{
     margin-top: 0;
@@ -347,7 +356,7 @@ display: none;
     margin-top: -126px;
 }
 
-.banner-shapes .shapes{position: absolute;animation: 5s linear infinite jumpThree;top: 0;display: inline-block;max-width: 100px;}
+.banner-shapes .shapes{position: absolute;animation: 5s linear infinite jumpThree;top: 0;display: inline-block;max-width: 100px;-webkit-animation: jumpThree 5s linear infinite;}
 
 @keyframes jumpThree{
   0% {
@@ -410,6 +419,9 @@ display: none;
     display: flex;
     align-items: center;
     justify-content: center;
+    display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
 }
 
 .demo-full img{

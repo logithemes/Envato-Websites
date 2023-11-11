@@ -73,6 +73,9 @@ body {
   margin: 0px;
   padding: 0px;
   background: linear-gradient(84deg, #160b24, #314d6e) !important;
+  background: -o-linear-gradient(7deg, #00000094, #060608a6);
+  background: -ms-linear-gradient(7deg, #00000094, #060608a6);
+  background: -webkitlinear-gradient(45deg, #ffef2d, #ff4f4f 80%);
 }
 
 ol,
@@ -141,7 +144,7 @@ p {
   right: 0px;
   padding: 30px 0px 18px 0px;
   z-index: 99;
-}
+} 
 
 .nav.act {
   box-shadow: rgb(0 0 0 / 33%) 0px 0px 20px -10px;
@@ -159,6 +162,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   width: 100%;
 }
 
@@ -175,6 +181,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   margin: 0px;
 }
 
@@ -242,6 +251,9 @@ p {
   justify-content: space-between;
   width: 33.333%;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .nav.act .nav-inner .side-bar-right span {
   transition: all 0.5s ease;
@@ -263,6 +275,9 @@ p {
   border-radius: 50%;
   margin: 0 6px;
   cursor: pointer;
+      display: -ms-flexbox;
+    -ms-flex-align: center;
+    -ms-flex-pack: center;
 }
 
 
@@ -341,6 +356,7 @@ p {
   -webkit-background-clip: text;
   font-size: 84px;
   animation: shine 10s linear infinite;
+  -webkit-animation: shine 10s linear infinite;
 }
 
 @keyframes shine {
@@ -424,6 +440,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .flow-tabel-inner ul::before {
   position: absolute;
@@ -475,10 +494,13 @@ p {
   overflow: hidden;
   white-space: nowrap;
   display: flex;
+  display: -ms-flexbox;
+
 }
 
 .client-logo-left {
   animation: logomoveleft 10s linear infinite;
+  -webkit-animation: logomoveleft 10s linear infinite;
   animation-delay: 1s;
 }
 
@@ -529,6 +551,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .section-title img {
   position: relative;
@@ -540,6 +565,8 @@ p {
   z-index: auto;
   transition: all 0.2s ease;
   animation: backgroun-move 3s linear infinite;
+  -webkit-animation: backgroun-move 3s linear infinite;
+  
 }
 
 @keyframes backgroun-move{
@@ -575,7 +602,9 @@ p {
   display: flex;
   align-items: center;
   height: 100%;
-  /* overflow: hidden; */
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  
 }
 .case-study-inner img {
   border-radius: 20px;
@@ -671,6 +700,8 @@ p {
 .price-list li {
   display: flex;
   padding: 6px 0 6px 0;
+  display: -ms-flexbox;
+
 }
 .price-list i {
   border: 1px solid #999;
@@ -681,6 +712,9 @@ p {
   border-radius: 50px;
   font-size: 12px;
   width: 20px;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .price-list h4 {
   font-weight: 400;
@@ -725,6 +759,9 @@ p {
   line-height: 48px;
   display: flex;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+ 
 }
 
 .price-rate .rs {
@@ -778,6 +815,9 @@ p {
   padding-top: 36px;
   display: flex;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  
 }
 
 .author-img img {
@@ -813,6 +853,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .work-categories-inner {
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -823,6 +866,9 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .work-categories-inner a {
   position: relative;
@@ -831,6 +877,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .work-categories-inner span {
   transition: all 0.5s ease;
@@ -890,6 +939,7 @@ p {
     z-index: 1;
     background: #ecc36b;
     animation: to-left 60s infinite linear;
+    -webkit-animation:  to-left 60s linear infinite;
     border-radius: 50%;
 }
 @keyframes to-left{
@@ -906,7 +956,9 @@ p {
 }
 }
 
-.container-box .shapes6{animation: to-right 60s infinite linear;left: auto;right: 0;top: auto;bottom: -20px;}
+.container-box .shapes6{animation: to-right 60s infinite linear; 
+  -webkit-animation: to-righ 60s linear infinite;
+  left: auto;right: 0;top: auto;bottom: -20px;}
 @keyframes to-right{
 
   0% {
@@ -931,7 +983,6 @@ p {
     width: 100px;
     mix-blend-mode: difference;
 }
-.container-box:hover{transition: all 0.5s ease;background: rgb(53 49 82);border: 1px solid rgba(255, 255, 255, 0.15);}
 
 .container-box h2 {
   font-weight: 600;
@@ -951,6 +1002,8 @@ p {
   background: rgba(0, 0, 0, 0.36);
   position: relative;
   margin-top: 10px;
+  display: -ms-flexbox;
+  
 }
 .webflow::before {
   position: absolute;
@@ -986,6 +1039,9 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .webflow-round-img .circle {
   display: inline-block;
@@ -1220,7 +1276,9 @@ p {
   margin: 0 auto;position: relative;
   display: table;
 }
-.glass-gradient-bg::before{position: absolute;content: "";background: url(../images/shapes/shapes.png);right: 18%;top: 40%;background-size: cover;width: 100px;height: 76px;animation: animationFramesThree 11s infinite linear alternate;}
+.glass-gradient-bg::before{position: absolute;content: "";background: url(../images/shapes/shapes.png);right: 18%;top: 40%;background-size: cover;width: 100px;height: 76px;animation: animationFramesThree 11s infinite linear alternate;
+  -webkit-animation: animationFramesThree 11s linear infinite;
+}
 
 @keyframes animationFramesThree {
 
@@ -1357,6 +1415,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .contact-form li {
@@ -1405,6 +1466,7 @@ p {
   object-fit: cover;
   border-radius: 50%;
   animation: rotate 5s infinite linear alternate;
+  -webkit-animation: rotate 5s linear infinite;
 }
 
 @keyframes rotate {
@@ -1628,6 +1690,8 @@ p {
   padding-left: 12px;
   position: relative;
   top: 4px;
+  display: -ms-flexbox;
+ 
 }
 
 .footer-follow li {
@@ -1647,6 +1711,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .footer-follow i:hover {
@@ -1737,6 +1804,7 @@ p {
 }
 .shapes .shapes1 {
   animation: animationFramesSeven 11s infinite linear alternate;
+  -webkit-animation: animationFramesSeven 11s linear infinite;
   bottom: -80px;
   left: 0;
 }
@@ -1750,6 +1818,7 @@ p {
 }
 .shapes .shapes2 {
   animation: spinAround 12s infinite linear alternate;
+  -webkit-animation: spinAround 12s linear infinite;
   top: 0;
   right: -77px;
   width: 100px;

@@ -25,13 +25,8 @@ $(document).ready(function () {
 
 
     //mouse move image
-    $(".container-box").on(" mousemove",function(e){ 
-      var x = e.clientX;
-      var y = e.clientY;
-      var newposX = x - 150;
-      var newposY = y - 150; $(".mousemove").css("transform","translate3d("+newposX+"px,"+newposY+"px,0px)");
-      $(".mousemove").css("opacity", "1");
-      });
+   
+    //mouse move img  end
 
       	//mouse leave image
 	$(".container-box").mouseleave(function() {
@@ -48,13 +43,13 @@ $(document).ready(function () {
       var invert = false;
       
       if (invert) {
-        rotate_X =  e.pageX / 120;
-        rotate_Y = e.pageY / 120;
-        perspective_z = e.pageX / 120;
+        rotate_X =  e.pageX / 50;
+        rotate_Y = e.pageY / 50;
+        perspective_z = e.pageX / 20;
       } else if (!invert) {
-        rotate_X = e.pageX / 120;
-        rotate_Y = -e.pageY / 120;
-        perspective_z = e.pageX / 120;
+        rotate_X = e.pageX / 50;
+        rotate_Y = -e.pageY / 50;
+        perspective_z = e.pageX / 20;
 
       }
       
