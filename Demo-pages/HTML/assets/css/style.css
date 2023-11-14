@@ -26,7 +26,6 @@ Table of Content:
 
 
 
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 * {
@@ -565,7 +564,7 @@ display: none;
     float: left;
     width: 100%;
     padding-bottom: 100px;
-    background: linear-gradient(180deg,#f2f5fd 0%,#e3eafc 100%);
+    background: url(../images/landing-banner/ln-footer.png);
     padding-top: 100px;
 }
 
@@ -577,3 +576,12 @@ display: none;
 
 .ln-footer .home-demo-heading .comm-btn a{background-color: #a9ff5c;}
 .ln-footer .home-demo-heading .comm-btn span::before{background: none;}
+
+#movediv{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  width: 20px;
+  background-color: gold;mix-blend-mode: difference;
+}

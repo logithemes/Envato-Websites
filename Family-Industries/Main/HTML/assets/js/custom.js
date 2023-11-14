@@ -29,20 +29,6 @@ $(document).ready(function () {
 
 
 
-       //GOOGLE MAP - SCROLL REMOVE
-       $(".contact-map")
-       .on('click', function () {
-           $(this).find("iframe").addClass("clicked")
-       })
-       .on('mouseleave', function () {
-           $(this).find("iframe").removeClass("clicked")
-       });
-
-
-
-
-
-
 
 //ON WINDOW SCROOL FUNCTION
 
@@ -55,7 +41,6 @@ $(window).on("scroll", function(){
     $(".client-logo-wrap1 .client-logo").css({'transform' : 'translateX(' + _topmi +')'});
 
     
-   // $(".ban-left").css({'transform' : 'translateX(' + _topMi +' )'});
 
 
 
@@ -67,21 +52,11 @@ $(window).on("scroll", function(){
     }
 
 });
-
-
-function getCursor(event) {
-    let x = event.clientX;
-    let y = event.clientY;
-    let _position = `X: ${x}<br>Y: ${y}`;
-
-    const infoElement = document.getElementById('info');
-    infoElement.innerHTML = _position;
-    infoElement.style.top = y + "px";
-    infoElement.style.left = (x + 20) + "px";
-}
   
 
 });
+
+
 
 
 

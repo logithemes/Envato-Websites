@@ -6,6 +6,8 @@
 /* When the browser is 1200px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
+  .pricing-inner{padding: 25px;}
+  .price-rate h3{flex-direction: column;}
   .menu li {
     padding: 0 15px;
   }
@@ -28,6 +30,21 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+  .price-list ul{margin: 0 auto;display: table;}
+  .price-list h3{text-align: center;}
+  
+  .contact-form input, .contact-form textarea{border: 1px solid #fff;}
+  .case-study .slick-prev, .case-study .slick-next{width: 40px;height: 40px;top: 63%;left: -20px;}
+  .case-study .slick-next{right: -20px;left: auto;}
+
+  .case-study .slick-prev::before{
+    font-size: 15px;
+    transform: scaleX(-1) translateX(-10px);
+}
+  .case-study .slick-next::after{
+    transform: scaleX(-1) translateX(11px);
+    font-size: 15px;
+}
   .glass-gradient-bg-inner{max-width: 100%;padding: 30px 30px 60px 30px;}
   .glass-gradient-bg::before{display: none;}
   .selected-work-text {
@@ -81,8 +98,9 @@
     position: relative;
     margin-top: 30px;
     text-align: center;
-    width: auto;
-    padding: 34px 30px 50px 30px;
+    width: 100%;
+    padding: 30px 30px 50px 30px;
+    left: 0;
   }
   .case-study-inner {
     flex-direction: column-reverse;
@@ -148,7 +166,7 @@
   }
 
   .contact-us {
-    padding: 50px 0 0 0;
+    padding: 50px 0 5px 0;
   }
 
   .followers {
@@ -270,7 +288,7 @@
   }
 
   .foo-deati {
-    margin-top: 10px;
+    margin-top: 20px;
   }
 
   .team-member {
@@ -300,7 +318,7 @@
 
   .banner {
     padding-bottom: 0;
-    padding-top: 150px;
+    padding-top: 124px;
   }
 }
 
@@ -309,6 +327,12 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+  .case-study .slick-prev, .case-study .slick-next{top: 58%;}
+  .web-flow-img{
+    position: relative;
+    margin-top: 40px;
+}
+  
   .contact-header h2 {
     font-size: 50px;
   }
@@ -328,9 +352,7 @@
     padding-bottom: 15px;
   }
 
-  .webflow::before {
-    display: none;
-  }
+  
   .webflow-content {
     padding-left: 0;
     text-align: center;
@@ -338,7 +360,7 @@
 
   .webflow {
     flex-direction: column;
-    padding: 25px 25px 50px 25px;
+    padding: 25px 25px 0 25px;
   }
   .webflow-content p {
     padding-right: 0;
@@ -413,6 +435,14 @@
 }
 
 @media screen and (max-width: 480px) {
+  .case-study .slick-prev{
+    left: 15px;
+    top: 55%;
+}
+  .case-study .slick-next{
+    right: 15px;
+    top: 55%;
+}
   .flow-tabel-inner ul li:last-child {
     display: none;
   }
@@ -420,12 +450,10 @@
     width: 100%;
     padding: 14px 15px;
   }
-  .ban-lhs img {
-    transform: scale(0.8);
-  }
+  
 
   .ban-lhs h1 {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 59px;
   }
 

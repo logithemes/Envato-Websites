@@ -3,10 +3,32 @@
 /*-------------------------------------------------*/
 
 /*-------------------------------------------------------*/
+/* When the browser is 1200to all small screens,below css will be applied.
+/*-------------------------------------------------------*/
+
+@media screen and (max-width: 1200px) {
+  .group-img .group-2{height: 74%;object-fit: cover;}
+  .framer li{justify-content: flex-start;}
+  .framer-text{left: 0;padding-left: 10px;}
+  .deep-dives-blox{margin-top: 35px;}
+  .footer-follow li{padding: 0 5px;}
+  .deep-dives .section-title{
+    margin-bottom: 0;
+}
+.oru-mission .section-title{padding-right: 0;text-align: center;}
+.oru-mission .section-title span{justify-content: center;padding-left: 0;}
+.oru-mission .section-title span::before{display: none;}
+}
+
+
+/*-------------------------------------------------------*/
 /* When the browser is 992 to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+
+  .team-mates-all{padding-top: 20px;padding-bottom: 0;}
+  .oru-mission{padding-top: 20px;}
   .testimonial .section-title {
     padding-left: 0;
   }
@@ -23,7 +45,8 @@
     width: 92%;
   }
   .talent-network {
-    padding-top: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .faq-main {
     padding-bottom: 30px;
@@ -44,9 +67,7 @@
     left: 0;
   }
 
-  .deep-dives-blox {
-    margin-top: 50px;
-  }
+  
   .padding-left-all {
     padding: 0;
   }
@@ -63,11 +84,11 @@
 
   .banner .ban-lhs {
     margin-top: 0;
-    margin-bottom: 59px;
+    
   }
 
   .footer {
-    padding: 90px 0 70px 0;
+    padding: 90px 0 50px 0;
   }
   .con-det::before {
     border: 19px solid #cde0ef;
@@ -79,6 +100,7 @@
   }
   .testimonial {
     padding-bottom: 0;
+    padding-top: 20px;
   }
 
   .testimonial-img {
@@ -254,9 +276,7 @@
     padding: 23px 45px;
   }
 
-  .section-title img {
-    margin-left: 30px;
-  }
+  
   .section-title h2 {
     font-size: 35px !important;
     line-height: 43px !important;
@@ -305,6 +325,10 @@
   .post-content {
     padding: 25px;
   }
+  
+  .video-four ul {
+    flex-direction: column;margin-top: 40px;
+  }
 }
 
 /*-------------------------------------------------------*/
@@ -321,7 +345,7 @@
     padding-left: 10px;
   }
   .deep-dives {
-    padding-top: 0;
+    padding-top: 50px;
   }
   .brand-img {
     display: flex;
@@ -346,22 +370,18 @@
   }
   .team-mates-all {
     padding-top: 40px;
+    padding-bottom: 50px;
   }
   .contact-form::before,
   .contact-form::after {
     display: none;
   }
-  .network .group-2 {
-    display: none;
-  }
+  
   .deep-dives-blox {
     padding: 30px;
-    margin-top: 0;
+  
   }
 
-  .video-four ul {
-    flex-direction: column;
-  }
   .oru-mission {
     padding: 0;
   }
@@ -370,7 +390,7 @@
   }
 
   .banner {
-    padding-top: 120px;
+    padding-top: 150px;
   }
 
   .contact-following {
@@ -402,6 +422,7 @@
 }
 
 @media screen and (max-width: 480px) {
+  .group-img .group-2{height: 60%;}
   .get-submit {
     text-align: center;
   }

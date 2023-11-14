@@ -154,6 +154,8 @@ p {
   width: 100%;
   display: flex;
   flex-direction: column;
+  display: -ms-flexbox;
+  -ms-flex-direction: column!important;
 }
 
 .logo img {
@@ -172,7 +174,7 @@ p {
 
 .menu li {
   position: relative;
-  border-bottom: 1px solid #3a3636;
+  border-bottom: 1px solid #3a3434;
   padding: 15px 0 15px 0;
   float: left;
   width: 100%;
@@ -192,7 +194,7 @@ p {
 }
 .menu ul li .act1 {
   color: #00bcd4;
-  border-bottom: 1px solid #00bcd4;
+  border-bottom: 1px solid #000;
 }
 
 .menu a:hover {
@@ -204,7 +206,7 @@ p {
 .menu a::before {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 1px !important;
   bottom: 0px;
   left: 0;
   right: 0;
@@ -229,7 +231,7 @@ p {
 
 .nav-inner .side-bar-right {
   display: flex;
-  
+  display: -ms-flexbox;
   padding-left: 23px;
 }
 .menu1 a {
@@ -290,25 +292,18 @@ p {
 }
 
 .banner .ban-lhs {
-  transform: translateX(50%);
-  transition: all 0.5s ease;
-  opacity: 0;
+display: block;
 }
 .ban-lhs span {
   display: inline-block;
   color: #00bcd4;
   font-weight: 700;
-}
-.banner .ban-lhs.ani1 {
-  transform: translateX(0);
-  transition: all 0.5s ease;
-  opacity: 1;
-  transition-delay: 0.5s;
+  text-decoration: underline;
 }
 
 .ban-lhs h1 {
   -webkit-background-clip: text;
-  background-image: url(../images/banner/giphy.webp);
+  background-image: url(../images/background/giphy.webp);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,6 +350,9 @@ p {
   padding: 0;
   justify-content: space-between;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .video-four li {
   padding: 0 10px;
@@ -392,20 +390,20 @@ p {
 .oru-mission {
   padding: 80px 0 0 0;
 }
-.mission-img {
-  position: relative;
-  width: 100%;
-}
+
 .mission-img::before {
   position: absolute;
   content: "";
   border-radius: 50px; /*1*/
-  border: 2px solid transparent; /*2*/
+  border: 2px solid transparent; 
   background: linear-gradient(45deg, #307421, #00bcd4) border-box; /*3*/
+  background: -o-linear-gradient(45deg, #307421, #00bcd4);
+  background: -ms-linear-gradient(45deg, #307421, #00bcd4);
+  background: -webkitlinear-gradient(45deg, #ffef2d, #00bcd4);
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; /*5'*/
-  mask-composite: exclude; /*5*/
+  -webkit-mask-composite: xor; 
+  mask-composite: exclude; 
   width: 100%;
   height: 100%;
 }
@@ -414,14 +412,29 @@ p {
 
 .oru-mission .section-title {
   color: #999;
-  font-weight: 700;
-  font-size: 49px;
+  font-weight: 400 !important;
+  font-size: 45px;
   line-height: 60px;
+  padding-right: 35px;
 }
 .oru-mission .section-title b {
-  display: block;
+  color: #00bcd4;
+  text-decoration: underline;
+  font-variant: small-caps;
+  text-transform: capitalize;
 }
-
+.oru-mission .section-title img{}
+.oru-mission .section-title span{
+  
+font-size: 15px;
+  
+position: relative;
+  
+padding-left: 20px;
+  
+font-style: italic;
+}
+.oru-mission .section-title span::before{position: absolute;content: "";background: #fff;height: 2px;width: 14px;left: 0;}
 /*-------------------------------------------------*/
 /* Our-courses
 /*-------------------------------------------------*/
@@ -447,6 +460,9 @@ p {
   border-radius: 10px;
   border: 2px solid transparent;
   background: linear-gradient(45deg, #192516, #08424a) border-box;
+  background: -o-linear-gradient(45deg, #192516, #08424a);
+  background: -ms-linear-gradient(45deg, #192516, #08424a);
+  background: -webkitlinear-gradient(45deg, #192516, #08424a);
   -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
@@ -467,6 +483,9 @@ p {
 .our-courses-box:hover {
   transition: all 0.5s ease;
   border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
+  background: -o-linear-gradient(to left, #743ad5, #d53a9d);
+  background: -ms-linear-gradient(to left, #743ad5, #d53a9d);
+  background: -webkitlinear-gradient(to left, #743ad5, #d53a9d);
 }
 .our-courses-box:hover .group-img .group-1 {
   opacity: 1;
@@ -482,6 +501,9 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .our-courses-box .framer-text1 {
   color: #fffbd8;
@@ -515,6 +537,9 @@ p {
   background: #232c2d;
   color: #919596;
   border-radius: 50px;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .course-heading {
   display: block;
@@ -527,7 +552,7 @@ p {
 
 .price {
   padding-top: 70px;
-  padding-right: 150px;
+  padding-right: 176px;
   position: relative;
   z-index: 2;
 }
@@ -594,7 +619,7 @@ p {
   position: relative;
   margin-top: 20px;
 }
-
+.brand-img img{filter: invert(1);width: 140px;}
 .testimonial1 ul {
   padding: 0;
   margin: 0;
@@ -632,6 +657,8 @@ p {
 
 .clint-img {
   display: flex;
+  display: -ms-flexbox;
+  
 }
 
 .clint-img h4 {
@@ -705,6 +732,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   border-radius: 50%;
   margin: 0 6px;
   cursor: pointer;
@@ -724,6 +754,8 @@ p {
 }
 .side-bar .footer-follow ul {
   display: flex;
+  display: -ms-flexbox;
+  
 }
 
 .side-bar .footer-follow li i {
@@ -813,6 +845,9 @@ p {
   margin-bottom: 40px;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .section-title p {
   font-size: 19px;
@@ -825,6 +860,20 @@ p {
   padding: 25px 0 0 0;
   margin-bottom: 0;
   line-height: 52px;
+  animation: deco 10s infinite  linear;
+  -webkit-animation: deco 10s linear infinite;
+  animation-duration: 8s;
+}
+@keyframes deco{
+  0% {
+    font-variation-settings: "wght" 100;
+}
+50% {
+    font-variation-settings: "wght" 900;
+}
+100% {
+    font-variation-settings: "wght" 100;
+}
 }
 
 .inn img {
@@ -886,6 +935,7 @@ p {
   position: relative;
   font-weight: 600;
   /* color: #000; */
+  text-decoration: none;
 }
 
 .section-title {
@@ -918,6 +968,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .team-mates::before {
   position: absolute;
@@ -1056,6 +1109,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   margin: 0 0 15px 0;
 }
 .framer .framer-img img {
@@ -1172,6 +1228,7 @@ p {
   left: 84%;
   bottom: -99px;
   animation: move 10s infinite linear;
+  -webkit-animation: move 10s linear infinite;
 }
 
 .faq-rhs:after {
@@ -1183,6 +1240,7 @@ p {
   z-index: 0;
   left: 28em;
   animation: full 5.8s infinite linear;
+  -webkit-animation: full 5.8s linear infinite;
 }
 
 .faq-rhs ul {
@@ -1209,8 +1267,9 @@ p {
   cursor: pointer;
   line-height: 35px;
   padding-right: 10px;
-  transition: all 0.5s ease;
   position: relative;
+  padding-right: 30px;
+  font-weight: 500 !important;
 }
 
 .faq-rhs li h3:before {
@@ -1275,8 +1334,12 @@ p {
   width: 150px;
   height: 150px;
   background: linear-gradient(133deg, #128593, transparent);
+  background: -o-linear-gradient(133deg, #128593, transparent);
+  background: -ms-linear-gradient(133deg, #128593, transparent);
+  background: -webkitlinear-gradient(133deg, #128593, transparent);
   border-radius: 50%;
   animation: animationFramesThree 11s infinite linear alternate;
+  -webkit-animation: animationFramesThree 11s linear infinite;
   z-index: 1;
 }
 .contact-us::after {
@@ -1286,6 +1349,9 @@ p {
   right: 0;
   animation: none;
   background: linear-gradient(7deg, #1b1d86, transparent);
+  background: -o-linear-gradient(7deg, #1b1d86, transparent);
+  background: -ms-linear-gradient(7deg, #1b1d86,  transparent);
+  background: -webkitlinear-gradient(45deg, #1b1d86, transparent);
 }
 @keyframes animationFramesThree {
   0% {
@@ -1328,8 +1394,7 @@ p {
   border-radius: 10px;
   padding: 50px;
 }
-.contact-form::before,
-.contact-form::after {
+.contact-form::before, .contact-form::after{
   position: absolute;
   content: "";
   background: url(../images/icons/1.svg);
@@ -1561,11 +1626,16 @@ p {
   padding: 0px 0 15px 0;
   display: flex;
   width: 100%;
+  display: -ms-flexbox;
+ 
 }
 .footer-follow {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
   padding-left: 12px;
   position: relative;
   top: 4px;
@@ -1588,10 +1658,13 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .footer-follow i:hover {
-  background: #3c3ddc;
+  background: #00bcd4;
   transition: all 0.4s ease;
   color: #fff;
   border: 1px solid #3c3ddc;
@@ -1684,6 +1757,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
  
 }
 .video-img img {
@@ -1703,12 +1779,19 @@ p {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 .courses-details::before {
   position: absolute;
   content: "";
   background: linear-gradient(133deg, #128593, transparent);
+  background: -o-linear-gradient(133deg, #128593,  transparent);
+  background: -ms-linear-gradient(133deg, #128593, transparent);
+  background: -webkitlinear-gradient(133deg, #128593,  transparent);
   animation: animationFramesThree 11s infinite linear alternate;
+  -webkit-animation: animationFramesThree 11s linear infinite;
   width: 550px;
   height: 550px;
   bottom: -100px;

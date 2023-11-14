@@ -10,9 +10,8 @@ $(document).ready(function () {
     })
 
     
-
     //BANNER ANIMATION
-    $(".banner .ban-lhs").addClass("ani1");
+    $(".banner").addClass("ani-banner");
   
     //SIDE BAR ACT
     $(".sidebat-act").on("click", function(){
@@ -24,11 +23,12 @@ $(document).ready(function () {
         $(".side-bar").removeClass("act");
     })
 
-
+  
 
 //ON WINDOW SCROOL FUNCTION
-
 $(window).on("scroll", function(){
+
+  //nav fixed
     var _topval = $(window).scrollTop();
     if(_topval >= 150){
         $(".nav").addClass("act");
@@ -36,6 +36,12 @@ $(window).on("scroll", function(){
     else{
         $(".nav").removeClass("act");
     }
+
+    //banner img translate
+      var _translatex = "-" + _topval / 4 + "px";
+      var _translatey =  _topval / 4 + "px";
+      $(".shapes3").css({'transform' : 'translate(' + _translatex +', ' + _translatex + ')'});
+      $(".shapes4").css({'transform' : 'translate(' + _translatey +', ' + _translatey + ')'});
 
 });
 

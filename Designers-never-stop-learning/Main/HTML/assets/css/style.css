@@ -174,7 +174,7 @@ p {
 
 .menu li {
   position: relative;
-  border-bottom: 1px solid #3a3636;
+  border-bottom: 1px solid #3a3434;
   padding: 15px 0 15px 0;
   float: left;
   width: 100%;
@@ -194,7 +194,7 @@ p {
 }
 .menu ul li .act1 {
   color: #00bcd4;
-  border-bottom: 1px solid #00bcd4;
+  border-bottom: 1px solid #000;
 }
 
 .menu a:hover {
@@ -206,7 +206,7 @@ p {
 .menu a::before {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 1px !important;
   bottom: 0px;
   left: 0;
   right: 0;
@@ -303,7 +303,7 @@ display: block;
 
 .ban-lhs h1 {
   -webkit-background-clip: text;
-  background-image: url(../images/banner/giphy.webp);
+  background-image: url(../images/background/giphy.webp);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -315,7 +315,6 @@ display: block;
   line-height: 80px;
   padding-right: 94px;
 }
-
 .ban-lhs h1::before {
   background-color: #efece6;
   content: "";
@@ -413,14 +412,29 @@ display: block;
 
 .oru-mission .section-title {
   color: #999;
-  font-weight: 700;
-  font-size: 49px;
+  font-weight: 400 !important;
+  font-size: 45px;
   line-height: 60px;
+  padding-right: 35px;
 }
 .oru-mission .section-title b {
-  display: block;
+  color: #00bcd4;
+  text-decoration: underline;
+  font-variant: small-caps;
+  text-transform: capitalize;
 }
-
+.oru-mission .section-title img{}
+.oru-mission .section-title span{
+  
+font-size: 15px;
+  
+position: relative;
+  
+padding-left: 20px;
+  
+font-style: italic;
+}
+.oru-mission .section-title span::before{position: absolute;content: "";background: #fff;height: 2px;width: 14px;left: 0;}
 /*-------------------------------------------------*/
 /* Our-courses
 /*-------------------------------------------------*/
@@ -538,7 +552,7 @@ display: block;
 
 .price {
   padding-top: 70px;
-  padding-right: 150px;
+  padding-right: 176px;
   position: relative;
   z-index: 2;
 }
@@ -1253,8 +1267,9 @@ display: block;
   cursor: pointer;
   line-height: 35px;
   padding-right: 10px;
-  transition: all 0.5s ease;
   position: relative;
+  padding-right: 30px;
+  font-weight: 500 !important;
 }
 
 .faq-rhs li h3:before {
@@ -1379,7 +1394,7 @@ display: block;
   border-radius: 10px;
   padding: 50px;
 }
-.contact-form::before, .contact-form::after, .mission-img::after {
+.contact-form::before, .contact-form::after{
   position: absolute;
   content: "";
   background: url(../images/icons/1.svg);
