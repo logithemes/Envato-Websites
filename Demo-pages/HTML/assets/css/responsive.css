@@ -7,8 +7,8 @@
 /*-------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
     
-    .nav-inner .side-bar-right span{font-size: 15px;}
-  
+  .nav-inner .side-bar-right span{font-size: 15px;}
+
 }
 
 /*-------------------------------------------------------*/
@@ -16,130 +16,130 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
-    .nav .container{max-width: 100%;}
-    .nav-inner .side-bar-right{display: none;}
-  .menu a:hover {
-    color: #fff;
-  }
-
-  
-
-  .side-bar.act {
-    width: 100%;
-  }
-
-  .nav .row {
-    align-items: center;
-  }
-
-  .nav {
-    background: #fff;
-    padding: 35px 0;
-  }
-
-  .side-bar-right i {
-    width: 30px;
-    height: 30px;
-    font-size: 12px;
-  }
-
-  .logo img {
-    max-width: 128px;
-  }
-
-  .nav-inner .menu {
-    position: fixed;
-    right: -500px;
-    top: 0;
-    overflow-y: auto;
-    height: 100vh;
-    width: 300px;
-    background: #16243d;
-    padding: 31px 20px 20px 20px;
-    z-index: 99;
-    transition: all 0.5s ease;
-  }
-
-  .menu ul li:first-child {
-    display: block;
-  }
-
-  .menu li {
-    width: 100%;
-    padding-bottom: 13px;
-  }
-
-  .menu a {
-    color: #fff !important;
-    width: 100%;
-    border-bottom: 1px solid #908484;
-    padding-bottom: 17px;
-  }
-
-  .menu img {
-    width: 120px;
-    filter: invert(1);
-    margin-bottom: 24px;
-  }
-
-  .menu ul li:last-child {
-    border: 0;
-  }
-
-  .nav-inner .side-bar-right {
-    position: absolute;
-    right: 15px;
-  }
-
-  .logo {
-    position: absolute;
-    transform: scale(0.8);
-    left: 0;
-  }
-
-  .menu-bar {
-    display: block;
-    position: absolute;
-    right: 15px;
-  }
-
-  .menu ul {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .menu span {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    background: red;
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 17px;
-    cursor: pointer;
-  }
-
-  .menu.menuact {
-    right: 0;
-  }
- 
-  .home-demo{padding-top: 60px;padding-bottom: 60px;}
-  .demo-full{
-    margin-top: 18px;
-    margin-bottom: 16px;
+  .nav .container{max-width: 100%;}
+  .nav-inner .side-bar-right{display: none;}
+.menu a:hover {
+  color: #fff;
 }
-  .core-features{
-    padding-top: 30px;
-    padding-bottom: 50px;
+
+
+
+.side-bar.act {
+  width: 100%;
 }
-  .ln-footer{
-    padding-top: 70px;
-    padding-bottom: 70px;
+
+.nav .row {
+  align-items: center;
+}
+
+.nav {
+  background: #fff;
+  padding: 35px 0;
+}
+
+.side-bar-right i {
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.logo img {
+  max-width: 128px;
+}
+
+.nav-inner .menu {
+  position: fixed;
+  right: -500px;
+  top: 0;
+  overflow-y: auto;
+  height: 100vh;
+  width: 300px;
+  background: #16243d;
+  padding: 31px 20px 20px 20px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+.menu ul li:first-child {
+  display: block;
+}
+
+.menu li {
+  width: 100%;
+  padding-bottom: 13px;
+}
+
+.menu a {
+  color: #fff !important;
+  width: 100%;
+  border-bottom: 1px solid #908484;
+  padding-bottom: 17px;
+}
+
+.menu img {
+  width: 120px;
+  filter: invert(1);
+  margin-bottom: 24px;
+}
+
+.menu ul li:last-child {
+  border: 0;
+}
+
+.nav-inner .side-bar-right {
+  position: absolute;
+  right: 15px;
+}
+
+.logo {
+  position: absolute;
+  transform: scale(0.8);
+  left: 0;
+}
+
+.menu-bar {
+  display: block;
+  position: absolute;
+  right: 15px;
+}
+
+.menu ul {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu span {
+  position: absolute;
+  right: 20px;
+  top: 0;
+  background: red;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.menu.menuact {
+  right: 0;
+}
+
+.home-demo{padding-top: 60px;padding-bottom: 60px;}
+.demo-full{
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+.core-features{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.ln-footer{
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 }
 
@@ -148,57 +148,60 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
-    .landing-heading h1{
-    font-size: 36px;
-    line-height: 50px;
-    font-weight: 400 !important;
+  .landing-heading h1{
+  font-size: 36px;
+  line-height: 50px;
+  font-weight: 400 !important;
 }
-    .home-demo-heading h2, .landing-heading span, .home-demo-heading span{
-    font-size: 32px !important;
-    line-height: 46px !important;
-    font-weight: 400 !important;
+  .home-demo-heading h2, .landing-heading span, .home-demo-heading span{
+  font-size: 32px !important;
+  line-height: 46px !important;
+  font-weight: 400 !important;
 }
-    
-    .bg-img{
-    padding-left: 0;
-    margin-top: 50px;
+  
+  .bg-img{
+  padding-left: 0;
+  margin-top: 50px;
 }
 
-.home-demo-heading{padding-right: 0;}
+.home-demo-heading{padding-left: 0;text-align: center;}
 .main-count{
-    margin-top: 6px;
+  margin-top: 6px;
 }
 .main-count i{
-    font-size: 50px;
-    font-weight: 700;
+  font-size: 50px;
+  font-weight: 700;
 }
 .main-count h4{
-    margin-top: -11px;
+  margin-top: -11px;
 }
 .landing-banner-img{margin-top: 0;}
-  
+
 }
 
 /*-------------------------------------------------------*/
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 576px) {
-    .core-features-inner{
-    margin-left: 25px;
-    margin-right: 25px;
+  .home-demo-heading span::before{
+    height: 8px;
 }
-    .load-speed{padding-bottom: 0;}
-    .bg-img::before{ display: none;}
-    .bg-img{margin-top: 70px;}
-    .comm-btn a{
-    padding: 20px 50px;
+  .core-features-inner{
+  margin-left: 25px;
+  margin-right: 25px;
 }
-    .comm-btn span{
-    font-size: 19px !important;
+  .load-speed{padding-bottom: 0;}
+  .bg-img::before{ display: none;}
+  .bg-img{margin-top: 70px;padding-right: 0;}
+  .comm-btn a{
+  padding: 20px 50px;
+}
+  .comm-btn span{
+  font-size: 19px !important;
 }
 .banner-shapes{display: none;}
 }
 
 @media screen and (max-width: 480px) {
- 
+
 }

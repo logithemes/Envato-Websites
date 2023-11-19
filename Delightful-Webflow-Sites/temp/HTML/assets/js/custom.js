@@ -9,9 +9,7 @@ $(document).ready(function () {
         $(".menu").removeClass("menuact");
     })
 
-    
-    //BANNER ANIMATION
-    $(".banner").addClass("ani-banner");
+
   
     //SIDE BAR ACT
     $(".sidebat-act").on("click", function(){

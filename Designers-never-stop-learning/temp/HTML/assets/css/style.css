@@ -134,11 +134,10 @@ p {
   position: fixed;
   top: 0px;
   left: 0px;
-  padding: 25px 0px 18px 0;
+  padding: 50px 0px 18px 0;
   z-index: 99;
   height: 100vh;
   width: 16%;
- 
 }
 
 .nav.act {
@@ -165,7 +164,7 @@ p {
 }
 
 .nav-inner .menu {
-  padding: 35px 0 35px 0;
+  padding: 35px 0 21px 0;
 }
 
 .menu ul {
@@ -206,7 +205,7 @@ p {
 .menu a::before {
   content: "";
   position: absolute;
-  height: 1px !important;
+  height: 2px !important;
   bottom: 0px;
   left: 0;
   right: 0;
@@ -408,8 +407,8 @@ display: block;
   height: 100%;
 }
 
-
-
+.mission-img{transition: all 0.5s ease;}
+.mission-img:hover{transform: translateY(-10px);transition: all 0.5s ease;}
 .oru-mission .section-title {
   color: #999;
   font-weight: 400 !important;
@@ -423,7 +422,7 @@ display: block;
   font-variant: small-caps;
   text-transform: capitalize;
 }
-.oru-mission .section-title img{}
+
 .oru-mission .section-title span{
   
 font-size: 15px;
@@ -447,19 +446,19 @@ font-style: italic;
   float: left;
   width: 100%;
   padding: 40px;
-
   text-transform: capitalize;
   overflow: hidden;
   position: relative;
   transition: all 0.5s ease;
   height: 100%;
+  border-radius: 10px;
 }
 .our-courses-box::before {
   position: absolute;
   content: "";
   border-radius: 10px;
   border: 2px solid transparent;
-  background: linear-gradient(45deg, #192516, #08424a) border-box;
+  background: linear-gradient(45deg, #113809, #04444c) border-box;
   background: -o-linear-gradient(45deg, #192516, #08424a);
   background: -ms-linear-gradient(45deg, #192516, #08424a);
   background: -webkitlinear-gradient(45deg, #192516, #08424a);
@@ -526,6 +525,7 @@ font-style: italic;
   margin: 0;
   padding: 0;
   text-transform: capitalize;
+  position: relative;
 }
 .name i,
 .price span {
@@ -544,6 +544,7 @@ font-style: italic;
 .course-heading {
   display: block;
   padding: 25px 0 0 0;
+  position: relative;
 }
 .course-heading h3 {
   font-weight: 600;
@@ -559,10 +560,11 @@ font-style: italic;
 .price h4 {
   font-size: 16px;
   line-height: 23px;
+  font-weight: 500 !important;
 }
 .price i {
   font-weight: 700;
-  font-size: 28px;
+  font-size: 26px;
   color: #999;
 }
 .price span {
@@ -577,7 +579,6 @@ font-style: italic;
   position: absolute;
   bottom: 0;
   right: 0;
-  z-index: 1;
   height: 100%;
   width: 100%;
   opacity: 0.5;
@@ -586,10 +587,9 @@ font-style: italic;
 }
 .group-img .group-2 {
   position: absolute;
-  bottom: -41px;
+  bottom: -30px;
   right: 0;
   filter: brightness(0.6);
-  transform: scale();
   mix-blend-mode: luminosity;
   transition: all 0.5s ease;
   z-index: -1;
@@ -886,11 +886,12 @@ font-style: italic;
 .theme-btn {
   position: relative;
   text-transform: capitalize;
-  margin: 0 0 0 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .theme-btn a {
-  padding: 23px 62px;
+  padding: 19px 66px;
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
@@ -933,9 +934,10 @@ font-style: italic;
 }
 .theme-btn span {
   position: relative;
-  font-weight: 600;
+  font-weight: 500;
   /* color: #000; */
   text-decoration: none;
+  transition: all 0.5s ease;
 }
 
 .section-title {
@@ -1001,7 +1003,8 @@ font-style: italic;
 }
 .team-text span {
   color: #999;
-  font-size: 14px;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 .team-mates .section-title {
   text-align: center;
@@ -1056,8 +1059,9 @@ font-style: italic;
   padding: 15px 22px;
   border-radius: 0 20px 20px 0;
   margin-left: -10px;
-  font-weight: 600;
+  font-weight: 600;transition: all 0.3s ease;
 }
+.get-submit button:hover{background: var(--btn);transition: all 0.3s ease;}
 .get-submit h5 {
   color: #999;
   font-size: 15px;

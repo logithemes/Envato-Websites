@@ -153,7 +153,7 @@ p {
   color: #3c3ddc !important;
 }
 .nav.act a:hover:before {
-  background: #3c3ddc;
+  background: none !important;
 }
 
 .nav-inner {
@@ -255,6 +255,7 @@ p {
   background: no-repeat;
   border: 2px solid #a9ff5c;
 }
+.nav.act .nav-inner .side-bar-right a{border: 2px solid #3c3ddc;}
 .nav.act .nav-inner .side-bar-right span {
   transition: all 0.5s ease;
   color: #000;
@@ -825,7 +826,7 @@ p {
   font-size: 16px;
   position: relative;
   transition: all 0.5s ease;
-  background: var(--btn);
+  background: #a9ff5c;
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 6;
@@ -857,7 +858,8 @@ p {
   transform: scalex(1);
   transform-origin: left;
 }
-
+.nav.act .nav-inner .side-bar-right a:hover:before{background:  #3c3ddc !important;border-radius: 0;}
+.nav.act .nav-inner .side-bar-right a:hover{transition: all 0.5s ease;}
 .theme-btn a:hover span {
   text-decoration: none;
   color: #fff;
@@ -1141,7 +1143,7 @@ p {
 }
 
 .bridge-text {
-  padding-right: 20px;
+  padding-right: 24px;
   float: left;
   width: 100%;
   position: relative;
@@ -1173,7 +1175,9 @@ p {
 }
 
 .media-video {
-  width: 100%;position: relative;
+  width: 100%;
+  position: relative;
+  animation: MoveLeftRight 2s linear infinite alternate;
 }
 .media-video::before{
   position: absolute;
@@ -1203,24 +1207,28 @@ p {
 .matter-pills {
   text-align: center;
   width: 100%;
+  padding-right: 20px;
 }
+.matter-pills img{animation: MoveLeftRight 2s linear infinite alternate;}
+@keyframes MoveLeftRight{
+  0% {
+    transform: translateX(0);
+}
+100% {
+    transform: translateX(-10px);
+}
+}
+
+.matter-pills::before{position: absolute;content: "";background: url(../images/exception/bg-1.png);background-size: cover;width: 100%;height: 100%;z-index: -1;filter: brightness(22%) saturate(10%) hue-rotate(0);}
 .matter-pills ul li:nth-child(2) .pill, .matter-pills ul li:nth-child(4) .pill, .matter-pills ul li:nth-child(6) .pill{
     transform: translateX(-30px);
 }
 
 
-.matter-pills:hover .pill{transition: all 0.5s ease;transform: translateX(0px)  !important;}
-
-.pill {
-  transition: all 0.5s ease;
-  margin-bottom: 10px;
-  transform: translateX(30px);
-}
-.pill img {
-  max-width: 220px;
-}
 .customization .customization-text {
   text-align: left;
+  padding-right: 0;
+  padding-left: 30px;
 }
 
 /*-------------------------------------------------*/
@@ -1412,24 +1420,10 @@ p {
   width: 100%;
   position: relative;
   height: 100%;
-}
-.post-left::before {
-  position: absolute;
-  content: "";
-  top: -21px;
-  right: -39px;
-  animation: animationFramesSeven 11s infinite linear alternate;
-  -webkit-animation: animationFramesSeven 11s linear infinite;
-  width: 50px;
-  height: 50px;
-  z-index: 1;
-  background: linear-gradient(133deg, #9cf947, transparent);
-  background: -o-linear-gradient(133deg, #9cf947, transparent);
-  background: -ms-linear-gradient(133deg, #9cf947, transparent);
-  background: -webkitlinear-gradient(133deg, #9cf947,  transparent);
-  border-radius: 50%;
+  overflow: hidden;
 }
 
+.post-left:hover img{transform: scale(1.1);transition: all 0.5s ease;}
 @keyframes animationFramesSeven {
   0% {
     transform: rotate(0);
@@ -1444,6 +1438,7 @@ p {
   object-fit: cover;
   border-radius: 2px;
   filter: brightness(0.7);
+  transition: all 0.3s ease;
 }
 
 .post-content {
@@ -1464,7 +1459,7 @@ p {
   display: inline-block;
   font-size: 13px;
 }
-
+.post-content-1 a:hover, .post-content a:hover{color: #fff;transition: all 0.3s ease;font-weight: 600 !important;}
 .post-content h2 {
   color: #fff;
   display: inline-block;
@@ -1523,7 +1518,7 @@ p {
 }
 
 .post-right ul li:hover .small-img img {
-  transform: scale(1.2);
+  transform: scale(1.1);
   transition: all 0.5s ease;
 }
 .small-img {
@@ -1534,7 +1529,7 @@ p {
 
 .small-img img {
   border-radius: 2px;
-  transition: all 0.5s ease;
+  transition: all 0.3s ease;
 }
 
 .post-content-1 a {
@@ -1588,6 +1583,7 @@ p {
 
 .comments-c-change i {
   color: #fff;
+  margin-right: 5px;
 }
 
 
@@ -2540,9 +2536,7 @@ p {
   background: none;
 }
 
-.tag-share a :hover {
-  color: #3c3ddc;
-}
+
 
 .tag-share .facebook {
   color: #0e6ba1;
@@ -2555,15 +2549,6 @@ p {
 }
 .tag-share .whatsapp {
   color: #25d366;
-}
-.pointer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
 }
 
 

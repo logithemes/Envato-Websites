@@ -28,6 +28,10 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+  
+  .customization .customization-text{
+    padding-left: 0;
+}
   .client-logo-wrap1 .client-logo li{width: 200px;}
   .client-logo-wrap1 .client-logo img{height: 360px;}
   .post-content-1{padding-left: 20px;}
@@ -102,6 +106,7 @@
   }
   .matter-pills {
     margin-top: 70px;
+    padding-right: 0;
   }
   .customization {
     padding-bottom: 20px;
