@@ -16,6 +16,11 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 992px) {
+  .bg-img{
+    padding-right: 0;
+    margin-top: 73px;
+}
+  .ln-footer-demo{display: none;}
   .nav .container{max-width: 100%;}
   .nav-inner .side-bar-right{display: none;}
 .menu a:hover {
@@ -139,7 +144,7 @@
 }
 .ln-footer{
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 82px;
 }
 }
 
@@ -148,15 +153,26 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 767px) {
+  .comm-btn{margin-top: 30px;}
+  .comm-btn a{
+    padding: 18px 48px;
+}
+  .comm-btn span{
+    font-size: 20px !important;
+}
+  .load-speed .home-demo-heading h2{
+    font-size: 32px;
+    line-height: 46px;
+}
   .landing-heading h1{
   font-size: 36px;
   line-height: 50px;
   font-weight: 400 !important;
 }
-  .home-demo-heading h2, .landing-heading span, .home-demo-heading span{
-  font-size: 32px !important;
-  line-height: 46px !important;
-  font-weight: 400 !important;
+  .home-demo-heading h2, .landing-heading span, .home-demo-heading .sub-heading{
+  font-size: 32px;
+  line-height: 46px;
+  font-weight: 500 !important;
 }
   
   .bg-img{
@@ -183,7 +199,7 @@
 /* When the browser is 576px to all small screens,below css will be applied.
 /*-------------------------------------------------------*/
 @media screen and (max-width: 576px) {
-  .home-demo-heading span::before{
+  .home-demo-heading .sub-heading::before{
     height: 8px;
 }
   .core-features-inner{
