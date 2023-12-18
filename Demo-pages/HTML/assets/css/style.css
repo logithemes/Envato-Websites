@@ -472,7 +472,7 @@ display: none;
 .home-demo-heading h3{
     font-size: 16px;
     font-weight: 400 !important;
-    color: #ff3295;
+    color: #3c3ddc;
     font-weight: 500 !important;
 }
 .demo-full h3{text-transform: capitalize;margin: 5px 0 0 0;font-weight: 500 !important;font-size: 22px;}
@@ -544,6 +544,7 @@ display: none;
     border-radius: 20px;
     height: 220px;
 }
+.core-features-inner:hover img{transform: translateY(-10px);transition: all 0.3s ease;}
 
 .core-features-inner h4{
     font-size: 19px;

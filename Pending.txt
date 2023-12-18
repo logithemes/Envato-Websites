@@ -1,4 +1,9 @@
 Pending items
 1- need logo
 2-Html tittle change and css tittle changes
-3-demo 
+3-demo - banner changes
+4-help document css date
+5-hemp document  intro
+6-swiper slider call
+
+

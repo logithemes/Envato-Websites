@@ -276,7 +276,8 @@ p {
   -ms-flex-align: center;
   -ms-flex-pack: center;
 }
-
+.side-bar-right i:hover{  color: #fff;
+  background: #571cff;}
 .menu-bar {
   display: none;
 }
@@ -805,7 +806,7 @@ p {
   font-size: 40px;
   font-weight: 400 !important;
   line-height: 49px;
-  text-decoration: underline;
+  
 }
 .sc-title-sub {
   margin-bottom: 20px;
@@ -1601,7 +1602,7 @@ p {
 }
 
 .log-det .sb-btn:hover {
-  background: #3c3ddc;
+  background: #ff00d5;
   transition: all 0.4s ease;
 }
 

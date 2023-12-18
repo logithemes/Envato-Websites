@@ -589,8 +589,9 @@ p {
   -ms-flex-pack: center;
   border-radius: 50%;
   margin: 0 6px;
-  cursor: pointer;
+  cursor: pointer;transition: all 0.3s ease;
 }
+.side-bar-right i:hover{background: #3c3ddc;transition: all 0.3s ease;}
 .side-bar .side-panel-con span {
   color: #000;
 }
